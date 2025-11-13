@@ -14,10 +14,12 @@
     "react-dom": "^16.10.2",
     "react-easy-emoji": "^1.8.1",
     "react-headroom": "^3.0.0",
+    "react-markdown": "^8.0.7",
     "react-reveal": "^1.2.2",
     "react-scripts": "^5.0.1",
     "react-test-renderer": "^16.10.2",
     "react-twitter-embed": "3.0.3",
+    "remark-gfm": "^3.0.1",
     "sass": "^1.32.8"
   },
   "scripts": {
@@ -49,6 +51,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "engines": {
+    "node": "22.x"
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
