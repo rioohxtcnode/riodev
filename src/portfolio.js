@@ -23,10 +23,9 @@ const greeting = {
   username: "Sai Manikanta Akula",
   title: "Hi all, I'm Sai Manikanta Akula",
   subTitle: emoji(
-      "UI  Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Nodejs / Angular and some other cool libraries and frameworks."
+    "UI  Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Nodejs / Angular and some other cool libraries and frameworks."
   ),
-  resumeLink:
-      "", // Set to empty to hide the button
+  resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -36,7 +35,8 @@ const socialMediaLinks = {
   github: "https://github.com/Smani116",
   linkedin: "https://www.linkedin.com/in/sai-manikanta-akula-45b4a523b/",
   email: "saimanikanta6116@outlook.com",
-  stackoverflow: "hhttps://stackoverflow.com/users/19626045/sai-manikanta-akula",
+  stackoverflow:
+    "hhttps://stackoverflow.com/users/19626045/sai-manikanta-akula",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -49,9 +49,11 @@ const skillsSection = {
   subTitle: "UI DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
-        "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
     ),
-      emoji("⚡ Expertise in Angular, TypeScript, and Node.js. I've excelled in Agile and Waterfall models,in banking, ecommerce, and a no-code product platform")
+    emoji(
+      "⚡ Expertise in Angular, TypeScript, and Node.js. I've excelled in Agile and Waterfall models,in banking, ecommerce, and a no-code product platform"
+    )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -130,7 +132,7 @@ const techStack = {
     {
       Stack: "Testing",
       progressPercentage: "90%"
-    },
+    }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
@@ -143,19 +145,17 @@ const workExperiences = {
     {
       role: "Angular Front End Developer",
       company: "TIAA ",
-      companylogo: require("./assets/images/tiaaLogo.png"),
-
+      companylogo: require("./assets/images/tiaaLogo.png")
     },
     {
       role: "Software Engineer",
       company: "Tabner Inc",
-      companylogo: require("./assets/images/tabnerLogo.png"),
-
+      companylogo: require("./assets/images/tabnerLogo.png")
     },
     {
       role: "Systems Analyst",
       company: "TCS",
-      companylogo: require("./assets/images/tcsLogo.png"),
+      companylogo: require("./assets/images/tcsLogo.png")
     }
   ]
 };
@@ -207,13 +207,13 @@ const bigProjects = {
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
   subtitle:
-      "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
   achievementsCards: [
     {
       title: "Google Code-In Finalist",
       subtitle:
-          "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
+        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
       image: require("./assets/images/codeInLogo.webp"),
       imageAlt: "Google Code-In Logo",
       footerLink: [
@@ -234,7 +234,7 @@ const achievementSection = {
     {
       title: "Google Assistant Action",
       subtitle:
-          "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
+        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
       image: require("./assets/images/googleAssistantLogo.webp"),
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
@@ -267,20 +267,20 @@ const achievementSection = {
 const blogSection = {
   title: "Blogs",
   subtitle:
-      "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
       url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
       title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
       description:
-          "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
     },
     {
       url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
       title: "Why REACT is The Best?",
       description:
-          "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
   display: false // Set false to hide this section, defaults to true
@@ -291,7 +291,7 @@ const blogSection = {
 const talkSection = {
   title: "TALKS",
   subtitle: emoji(
-      "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
   ),
 
   talks: [
@@ -330,7 +330,7 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-      "Discuss a project or just want to say hi? My Inbox is open for all.",
+    "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+1 - (707)-606-1165",
   email_address: "saimanikanta6116@outlook.com"
 };
