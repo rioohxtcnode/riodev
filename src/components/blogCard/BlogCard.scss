@@ -22,10 +22,9 @@
   margin-right: 20px;
   margin-bottom: 14px;
   margin-top: 32px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  // Fully visible text
+  white-space: normal;
+  overflow: visible;
 }
 
 .small {
@@ -34,11 +33,10 @@
   line-height: 1.5rem;
   color: $cardSubtitle;
   padding: 0px 20px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
   margin: 0px;
+  // Fully visible text
+  overflow: visible;
+  white-space: normal;
 }
 
 .go-corner {
@@ -146,4 +144,44 @@
 }
 .blog-card-shadow {
   box-shadow: 1px 0px 20px $darkBoxShadow2;
+}
+.dark-mode {
+  .blog-container {
+    background-color: none;
+    color: $textColorDark;
+    box-shadow: 0 0 30px rgba(232, 228, 229, 0.15); // soft maroon glow
+  }
+
+  .blog-card {
+    background: none;
+    color: $textColorDark;
+  }
+
+  .blog-title {
+    color: $textColorDark;
+  }
+
+  .small {
+    color: $subTitle;
+  }
+
+  .blog-card:hover > .small {
+    color: $textColorDark; // or any hover color for dark
+  }
+
+  .blog-card:hover > h3 {
+    color: $textColorDark;
+  }
+
+  .go-corner {
+    background-color: $buttonHover; // slightly lighter maroon
+  }
+
+  .go-arrow {
+    color: #fff;
+  }
+
+  .blog-card-shadow {
+    box-shadow: 1px 0px 20px rgba(250, 248, 249, 0.2);
+  }
 }

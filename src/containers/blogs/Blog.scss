@@ -6,7 +6,7 @@
   height: 430px;
   background: $textColorDark;
   border-radius: 4px;
-  box-shadow: 0px 20px 50px $darkBoxShadow;
+  box-shadow: 0px 20px 50px rgba(229, 137, 170, 0.3); // maroon shadow
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -14,7 +14,7 @@
 }
 
 .square:hover {
-  box-shadow: 0 20px 40px $lightBoxShadow;
+  box-shadow: 0 20px 40px rgba(229, 137, 170, 0.4); // stronger maroon on hover
 }
 
 .blog-header-text {
@@ -24,23 +24,29 @@
 
 .blog-subtitle {
   text-transform: uppercase;
+  text-align: left;
 }
+
 .blog-main-div > * {
   flex: 1;
   margin-bottom: 30px;
 }
+
 .blog-main-div {
   display: flex;
 }
+
 .blog-image-div > img {
   max-width: 100%;
   height: auto;
 }
+
 .blog-text-div {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 32px;
 }
+
 .subTitle {
   color: $subTitle;
 }
@@ -51,14 +57,10 @@
     font-size: 40px;
   }
 }
+
 @media (max-width: 768px) {
   .blog-header-text {
     font-size: 30px;
-    text-align: center;
-  }
-  .blog-subtitle {
-    font-size: 16px;
-    line-height: normal;
     text-align: center;
   }
 }
@@ -66,5 +68,36 @@
 @media screen and (max-width: 480px) and (min-width: 300px) {
   .blog-text-div {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+.dark-mode {
+  .square {
+    width: 440px;
+    height: 430px;
+    background: none; // dark card background
+    border: 1px solid rgba(255, 255, 255, 0.05); // subtle border
+    box-shadow: 0px 20px 50px rgba(229, 137, 170, 0.2); // maroon glow
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+  }
+
+  .square:hover {
+    box-shadow: 0 20px 40px rgba(229, 137, 170, 0.4); // hover effect
+  }
+
+  .blog-header-text {
+    font-size: 56px;
+    font-weight: 400;
+    color: $textColorDark;
+  }
+  .blog-subtitle {
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  .subTitle {
+    color: $subTitle;
   }
 }

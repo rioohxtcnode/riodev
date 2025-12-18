@@ -35,6 +35,20 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  border-radius: 20px 20px 0 0;
+  position: relative;
+}
+
+@keyframes animatedBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .experience-blurred_div {
@@ -120,7 +134,14 @@
   padding: 1.5rem;
   margin-top: 2rem;
 }
-
+.experience-text-details ul,
+.experience-text-details ol {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+  text-align: center;
+  justify-content: center;
+}
 /* Media Query */
 
 @media (max-width: 1380px) {

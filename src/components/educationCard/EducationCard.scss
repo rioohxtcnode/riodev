@@ -6,7 +6,7 @@
 }
 
 .education-card:hover + .education-card-border {
-  border-color: $educationCardBorder;
+  border-color: #e589aa;
   width: 100%;
   -webkit-transition: width 0.6s ease-in-out;
   -moz-transition: width 0.6s ease-in-out;
@@ -17,7 +17,7 @@
 .education-card-border {
   height: 30px;
   width: 80%;
-  border-top: 2px solid $lightBorder1;
+  border-top: 2px solid #e589aa;
   margin-bottom: 20px;
   -webkit-transition: width 0.6s ease-in-out;
   -moz-transition: width 0.6s ease-in-out;
@@ -130,5 +130,46 @@
   .education-text-bullets > ul {
     max-width: 80%;
     margin: auto;
+  }
+  .education-card::before {
+    content: "🎓";
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2.2rem;
+    opacity: 0.18;
+    pointer-events: none;
+    z-index: 1;
+  }
+}
+.dark-mode {
+  .education-card {
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .education-text-school {
+    color: $textColorDark;
+  }
+
+  .education-text-subHeader {
+    color: $textColorDark;
+  }
+
+  .education-text-duration {
+    color: $subTitle;
+  }
+
+  .education-text-desc,
+  .education-text-bullets li {
+    color: $subTitle;
+  }
+
+  .education-card-border {
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .education-roundedimg {
+    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.1);
   }
 }
