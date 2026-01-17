@@ -19,12 +19,12 @@ const illustration = {
   animated: true // Set to false to use static SVG
 };
 
-const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
-  subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
-  ),
+const greeting: {
+  title: "Hi, I'm Virdoex Hunter",
+  subtitle:
+    "Application Security Engineer & Bug Bounty Hunter with 5+ years of offensive-first experience across Web, API, Mobile (Android/iOS) and Microservices. I focus on how trust breaks in real product flows — auth, payments, sessions, and abuse paths.",
+},
+
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -33,13 +33,13 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  gmail: "virdoexhunter@gmail.com",
+  github: "https://github.com/Virdoexhunter",
+  linkedin: "https://www.linkedin.com/in/virdoexhunter/",
+  twitter: "https://x.com/virdoex_hunter",
+  medium: "https://virdoexhunter.medium.com",
+  youtube: "https://www.youtube.com/@virdoex",
+
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -48,104 +48,147 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
-  skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
-  ],
+ title: "What I Do",
+subTitle: "OFFENSIVE APPLICATION SECURITY & PRODUCT DEFENSE",
+skills: [
+  emoji(
+    "⚡ Perform offensive-first security testing across Web, API, Mobile (Android / iOS) and microservice architectures to uncover real-world abuse paths."
+  ),
+  emoji(
+    "⚡ Identify authentication, authorization, session and business-logic flaws by modeling how trust breaks in real product flows."
+  ),
+  emoji(
+    "⚡ Conduct threat modeling from feature ideation to architecture review and translate risks into developer-actionable remediation."
+  ),
+  emoji(
+    "⚡ Embed security into CI/CD pipelines using SAST, DAST and SCA to enable shift-left security."
+  ),
+  emoji(
+    "⚡ Build exploit proof-of-concepts and work directly with engineering teams until fixes are shipped to production."
+  ),
+],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
-  softwareSkills: [
+  data: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      title: "Application & Product Security",
+      skills: [
+        "Web Application Pentesting",
+        "API Security & Authorization Flaws",
+        "Mobile Security (Android / iOS)",
+        "Thick Client Security Testing",
+        "Authentication & Authorization Abuse",
+        "Business Logic & Payment Flow Exploitation",
+        "Session Management & Token Security",
+        "OAuth / OIDC / SSO Misconfigurations",
+        "Threat Modeling & Abuse Case Identification",
+        "Secure SDLC & Security Design Reviews",
+      ],
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      title: "DevSecOps & CI/CD Security",
+      skills: [
+        "CI/CD Pipeline Security",
+        "Shift-Left Security Practices",
+        "SAST (Checkmarx, Semgrep)",
+        "DAST (Burp Suite Pro, OWASP ZAP)",
+        "Software Composition Analysis (SCA)",
+        "Secrets Detection (trufflehog)",
+        "Dependency & Supply-Chain Security",
+      ],
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      title: "Container, Cloud & Microservices Security",
+      skills: [
+        "Container Runtime Security (Sysdig)",
+        "Microservices Architecture Assessments",
+        "Runtime Misconfiguration Detection",
+        "Service-to-Service Trust Abuse",
+        "Kubernetes Security Basics",
+        "Cloud-Native Threat Modeling",
+      ],
     },
     {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      title: "Mobile, IoT & Specialized Testing",
+      skills: [
+        "Android Pentesting (Frida, MobSF, Jadx)",
+        "iOS Application Security Testing",
+        "Deeplink & URL Scheme Exploitation",
+        "IoT & MIoT Pentesting",
+        "Medical Devices (DICOM, HL7, PACS)",
+        "FDA 510(k), SaMD, SBOM Security Reviews",
+      ],
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      title: "Red Teaming & Adversary Simulation",
+      skills: [
+        "Red Team Engagements",
+        "Phishing & Social Engineering",
+        "Attack Simulation & Threat Emulation",
+        "OSINT-Driven Recon & Enumeration",
+        "Attack Surface Management",
+        "MITRE ATT&CK Mapping",
+      ],
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      title: "Tools, Automation & Scripting",
+      skills: [
+        "Burp Suite Pro, Nuclei, ZAP",
+        "Frida, MobSF, Jadx",
+        "Nmap, Metasploit",
+        "Sysdig, Kibana, Redpanda",
+        "Bash & Python Automation",
+        "Custom Security Tooling",
+      ],
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      title: "Standards, Frameworks & Compliance",
+      skills: [
+        "OWASP Top 10 (Web, API, Mobile)",
+        "NIST Security Framework",
+        "PCI-DSS",
+        "HIPAA",
+        "GDPR",
+        "FDA Security Standards",
+      ],
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      title: "Soft Skills & Collaboration",
+      skills: [
+        "Security Communication with Engineers",
+        "Developer-Actionable Reporting",
+        "Problem Solving & Root Cause Analysis",
+        "Cross-Team Collaboration",
+        "Leadership & Mentorship",
+        "Client-Facing Security Discussions",
+      ],
     },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
   ],
-  display: true // Set false to hide this section, defaults to true
 };
 
 // Education Section
 
-const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
-  schools: [
-    {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
-    }
-  ]
-};
+const educationInfo = [
+  {
+    schoolName: "Kurukshetra University",
+    subHeader: "Bachelor of Technology (B.Tech) in Computer Science Engineering",
+    duration: "2017 – 2020",
+    desc:
+      "Completed undergraduate studies with strong foundations in computer science, software engineering, and security concepts.",
+    grade: "79%",
+  },
+  {
+    schoolName: "GBN Polytechnic",
+    subHeader: "Diploma in Computer Science Engineering",
+    duration: "2015 – 2017",
+    desc:
+      "Focused on core programming, networking, operating systems, and practical system-level engineering.",
+    grade: "80%",
+  },
+];
+
 
 // Your top 3 proficient stacks/tech experience
 
@@ -170,36 +213,51 @@ const techStack = {
 
 // Work experience section
 
-const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
-  experience: [
-    {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
-    {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
-  ]
-};
+const workExperiences = [
+  {
+    role: "Product Security Consultant",
+    company: "Emirates NBD (via Forward Defense)",
+    companylogo: require("./assets/images/enbd.png"),
+    date: "Feb 2025 – Present",
+    desc: [
+      "Performed targeted security assessments for web, Android and iOS applications operating in microservice architectures.",
+      "Led threat modeling sessions from feature ideation through architecture review, identifying abuse cases before code was written.",
+      "Embedded security checks into sprint cycles and CI/CD pipelines to enable shift-left security.",
+      "Built exploit proof-of-concepts for authentication, authorization, session and payment abuse to demonstrate real-world impact.",
+      "Reviewed design documents and feature proposals, flagging broken trust assumptions and weak enforcement boundaries.",
+      "Reverse engineered client-side logic to identify hidden authorization paths and trust bypasses.",
+      "Partnered directly with engineering teams to ensure vulnerabilities were remediated and validated before production release.",
+    ],
+  },
+  {
+    role: "Security Consultant",
+    company: "Ampcus Cyber",
+    companylogo: require("./assets/images/ampcus.png"),
+    date: "Feb 2024 – Feb 2025",
+    desc: [
+      "Conducted comprehensive web, API and mobile (Android/iOS) security assessments with emphasis on business logic exploitation.",
+      "Chained low-severity issues into high-impact attack paths across authentication, authorization and workflow logic.",
+      "Built automation scripts to eliminate repetitive manual testing and scale assessment coverage.",
+      "Led OSINT-driven attack surface discovery and adversary simulations.",
+      "Executed red team exercises including phishing and social engineering campaigns.",
+      "Delivered detailed, developer-actionable security reports and remediation guidance.",
+    ],
+  },
+  {
+    role: "Cyber Security Specialist",
+    company: "Network Intelligence India",
+    companylogo: require("./assets/images/nii.png"),
+    date: "Oct 2021 – Dec 2023",
+    desc: [
+      "Led vulnerability assessment and penetration testing (VAPT) for web, mobile and infrastructure environments.",
+      "Performed firewall, WAF, WiFi and network device security reviews for enterprise clients.",
+      "Assessed secure configurations across servers, network devices and perimeter controls.",
+      "Collaborated with client teams to validate fixes and improve security posture.",
+      "Contributed to multiple enterprise-scale security engagements across regulated environments.",
+    ],
+  },
+];
+
 
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
